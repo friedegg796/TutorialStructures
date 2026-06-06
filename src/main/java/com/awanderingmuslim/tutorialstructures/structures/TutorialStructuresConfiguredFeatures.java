@@ -1,23 +1,20 @@
 package com.awanderingmuslim.tutorialstructures.structures;
 
 import com.awanderingmuslim.tutorialstructures.TutorialStructures;
-import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.GeodeLayerSettings;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
-
-import java.util.List;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 
 public class TutorialStructuresConfiguredFeatures {
 
@@ -25,8 +22,12 @@ public class TutorialStructuresConfiguredFeatures {
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-        register(context, BREWING_TUTORIAL_KEY, Feature.TREE, new (
-                BlockStateProvider.simple(Blocks.GOLD_BLOCK));
+        register(context, BREWING_TUTORIAL_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.GOLD_BLOCK),
+                new FancyTrunkPlacer(1, 2, 3),
+                BlockStateProvider.simple(Blocks.NETHERITE_BLOCK),
+                new FancyFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.DIRT)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

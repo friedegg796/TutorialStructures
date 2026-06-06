@@ -1,0 +1,4 @@
+// 1.20.1	2026-06-05T23:22:28.130793519	Registries
+ffdd8bdb4f308da18e1562ae5a4dc54f947c5463 data/tutorialstructures/forge/biome_modifier/add_brewing_tutorial_structure.json
+54fd19ae42e83439d5a3b8a9e4ee48028dbf2422 data/tutorialstructures/worldgen/configured_feature/brewing_tutorial.json
+f32331eb499af8bdbbd555415d538e8e2810518e data/tutorialstructures/worldgen/placed_feature/brewing_tutorial_place_feature.json
