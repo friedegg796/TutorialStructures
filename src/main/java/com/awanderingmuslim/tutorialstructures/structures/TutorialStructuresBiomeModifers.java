@@ -15,7 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class TutorialStructuresBiomeModifers {
 
 
-    public static final ResourceKey<BiomeModifier> ADD_BREWING_TUTORIAL_STRUCTURE = registerKey("add_brewing_tutorial_structure");
+    public static final ResourceKey<BiomeModifier> ADD_MINESHAFT_TUTORIAL_STRUCTURE = registerKey("add_brewing_tutorial_structure");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
@@ -23,9 +23,9 @@ public class TutorialStructuresBiomeModifers {
         var biomes = context.lookup(Registries.BIOME);
 
 
-        context.register(ADD_BREWING_TUTORIAL_STRUCTURE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_MINESHAFT_TUTORIAL_STRUCTURE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(TutorialStructuresPlacedFeatures.BREWING_TUTORIAL_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(TutorialStructuresPlacedFeatures.MINESHAFT_TUTORIAL_PLACED_KEY)),
                 GenerationStep.Decoration.SURFACE_STRUCTURES
         ));
     }

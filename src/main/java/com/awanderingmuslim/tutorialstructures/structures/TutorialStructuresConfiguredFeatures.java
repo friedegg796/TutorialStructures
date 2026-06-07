@@ -18,13 +18,13 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 
 public class TutorialStructuresConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BREWING_TUTORIAL_KEY = registerKey("brewing_tutorial");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINESHAFT_TUTORIAL_KEY = registerKey("brewing_tutorial");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-        register(context, BREWING_TUTORIAL_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        register(context, MINESHAFT_TUTORIAL_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.GOLD_BLOCK),
-                new FancyTrunkPlacer(1, 2, 3),
+                new FancyTrunkPlacer(3, 2, 3),
                 BlockStateProvider.simple(Blocks.NETHERITE_BLOCK),
                 new FancyFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.DIRT)).build());
