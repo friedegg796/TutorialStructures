@@ -33,17 +33,12 @@ public class TutorialStructures {
         MinecraftForge.EVENT_BUS.register(this);
 
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 
-
-        LOGGER.info("Brewing Tutorial separation should be " + Config.brewingTutorialSeparation + " and Brewing Tutorial spacing should be " + Config.brewingTutorialSpacing);
 
     }
 
