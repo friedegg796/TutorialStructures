@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "tutorialstructures:campfire_tutorial",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 10,
+    "salt": 13562766304
+  }
+}
