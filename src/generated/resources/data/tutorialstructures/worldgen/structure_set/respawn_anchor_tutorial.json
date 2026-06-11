@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "tutorialstructures:respawn_anchor_tutorial",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 26,
+    "separation": 10,
+    "salt": 8956248306
+  }
+}

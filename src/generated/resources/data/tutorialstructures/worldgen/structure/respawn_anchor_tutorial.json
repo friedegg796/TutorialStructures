@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#minecraft:has_structure/nether_fortress",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "tutorialstructures:respawn_anchor_tutorial",
+  "size": 1,
+  "start_height": {
+    "above_bottom": 50
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}
