@@ -15,16 +15,20 @@ For now, it only adds 3 structures, but more will be added inshaAllah.
 <summary>Structures</summary>
 
 
-Campfire Tutorial
-
+### Campfire Tutorial
+![A campsite, featuring an unlit campfire in the middle with 4 raw beef, and inside the tent containing a spruce plank with a flint and steel on it, and a barrel with some loot](https://cdn.modrinth.com/data/cached_images/423fec9615d0fe1ac208ee96ea79b1277f185b44.png)
 Teaches the player how to use a campfire. It has a campsite with an unlit campfire containing meat at the middle.
 
 
-Respawn Anchor Tutorial
+### Respawn Anchor Tutorial
+
+![A place in the nether featuring a respawn anchor filled 1/4th with glowstone around it and then nether bricks around those glowstone](https://cdn.modrinth.com/data/cached_images/fc9e93a7c5e3bc8021539522da019411b457fb28.png)
 
 Teaches the player how to use a Respawn Anchor, has a respawn anchor activated to 1/4 and has glowstone around it (to give the player the hint that they should put glowstone into it).
 
-Brewing Tutorial
+### Brewing Tutorial
+
+![A house made of dark cyan-like wood (Warped wood), called the Brewing Tutorial](https://cdn.modrinth.com/data/cached_images/def667f77b2bd66ef2cba5e6c1184b3647acff4e.png)
 
 Teaches the player the basics of the brewing stand, and teaches them how to make an awkward potion and a fire resistance potion.
 
