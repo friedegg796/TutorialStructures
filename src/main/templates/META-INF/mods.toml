@@ -14,7 +14,7 @@ loaderVersion="${loader_version_range}" #mandatory This is typically bumped ever
 license="ARR"
 
 # A URL to refer people to when problems occur with this mod
-#issueTrackerURL="" #optional
+#issueTrackerURL="https://github.com/friedegg796/TutorialStructures/issues"
 
 # If your mod is purely client-side and has no multiplayer functionality (be it dedicated servers or Open to LAN),
 # set this to true, and Forge will set the correct displayTest for you and skip loading your mod on dedicated servers.
@@ -32,16 +32,16 @@ version="1.0.0" #mandatory
 # A display name for the mod
 displayName="Tutorial Structures" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
-#updateJSONURL="https://change.me.awanderingmuslim.invalid/updates.json" #optional
+#updateJSONURL="" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.awanderingmuslim.invalid/" #optional
+#displayURL="https://friedegg796.github.io/muslimdiscs-modpage/" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="tutorialstructures.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+#credits="AwanderingMuslim - Creator" #optional
 
 # A text field displayed in the mod UI
 authors="AwanderingMuslim" #optional
@@ -55,7 +55,7 @@ authors="AwanderingMuslim" #optional
 #displayTest="MATCH_VERSION" # if nothing is specified, MATCH_VERSION is the default when clientSideOnly=false, otherwise IGNORE_ALL_VERSION when clientSideOnly=true (#optional)
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''Tutorial Structures!'''
+description='''Structures aimed to teach the player about Minecraft without the need of documentation or wikia!'''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.${mod_id}]] #optional
@@ -81,8 +81,8 @@ description='''Tutorial Structures!'''
     ordering="NONE"
     side="BOTH"
 
-# Features are specific properties of the game environment, that you may want to declare you require. This awanderingmuslimingmuslim declares
+# Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
-# stop your mod loading on the server for awanderingmuslimingmuslim.
+# stop your mod loading on the server.
 #[features.${mod_id}]
 #openGLVersion="[3.2,)"
