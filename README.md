@@ -17,6 +17,7 @@ For now, it only adds 3 structures, but more will be added inshaAllah.
 
 ### Campfire Tutorial
 ![A campsite, featuring an unlit campfire in the middle with 4 raw beef, and inside the tent containing a spruce plank with a flint and steel on it, and a barrel with some loot](https://cdn.modrinth.com/data/cached_images/423fec9615d0fe1ac208ee96ea79b1277f185b44.png)
+
 Teaches the player how to use a campfire. It has a campsite with an unlit campfire containing meat at the middle.
 
 
