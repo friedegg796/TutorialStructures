@@ -1,53 +1,24 @@
-<a href="https://billing.sparkedhost.com/aff.php?aff=3242">
-<img src="https://cdn.modrinth.com/data/cached_images/277f1b5c0c151bb93fec06c6b820aa67f2ad83f6.png" alt="Sparked Hosting Logo" width=30%/>
-</a>
+# MultiLoader Template
 
-_This image has an affiliate link, aka I can get a commission (MONEY for me at no expense to you) if you purchase
-through this link. So if you wanna support me, and get a neat little server for Minecraft, click the image!_
+This project provides a Gradle project template that can compile mods for both Forge and Fabric using a common sourceset. This project does not require any third party libraries or dependencies. If you have any questions or want to discuss the project join our [Discord](https://discord.myceliummod.network).
 
-# Tutorial Structures
+## Getting Started
 
-Structures made to teach the player of game mechanics without the need of documentation or wikia.
+## IntelliJ IDEA
+This guide will show how to import the MultiLoader Template into IntelliJ IDEA. The setup process is roughly equivalent to setting up Forge and Fabric independently and should be very familiar to anyone who has worked with their MDKs.
 
-For now, it only adds 3 structures, but more will be added inshaAllah.
+1. Clone or download this repository to your computer.
+2. Configure the project by editing the `group`, `mod_name`, `mod_author`, and `mod_id` properties in the `gradle.properties` file. You will also need to change the `rootProject.name`  property in `settings.gradle`, this should match the folder name of your project, or else IDEA may complain.
+3. Open the template's root folder as a new project in IDEA. This is the folder that contains this README file and the gradlew executable.
+4. If your default JVM/JDK is not Java 17 you will encounter an error when opening the project. This error is fixed by going to `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`and changing the value to a valid Java 17 JVM. You will also need to set the Project SDK to Java 17. This can be done by going to `File > Project Structure > Project SDK`. Once both have been set open the Gradle tab in IDEA and click the refresh button to reload the project.
+5. Open the Gradle tab in IDEA if it has not already been opened. Navigate to `Your Project > Common > Tasks > vanilla gradle > decompile`. Run this task to decompile Minecraft.
+6. Open your Run/Debug Configurations. Under the Application category there should now be options to run Forge and Fabric projects. Select one of the client options and try to run it.
+7. Assuming you were able to run the game in step 7 your workspace should now be set up.
 
-<details>
-<summary>Structures</summary>
+### Eclipse
+While it is possible to use this template in Eclipse it is not recommended. During the development of this template multiple critical bugs and quirks related to Eclipse were found at nearly every level of the required build tools. While we continue to work with these tools to report and resolve issues support for projects like these are not there yet. For now Eclipse is considered unsupported by this project. The development cycle for build tools is notoriously slow so there are no ETAs available.
 
-### Campfire Tutorial
+## Development Guide
+When using this template the majority of your mod is developed in the Common project. The Common project is compiled against the vanilla game and is used to hold code that is shared between the different loader-specific versions of your mod. The Common project has no knowledge or access to ModLoader specific code, apis, or concepts. Code that requires something from a specific loader must be done through the project that is specific to that loader, such as the Forge or Fabric project.
 
-![A campsite, featuring an unlit campfire in the middle with 4 raw beef, and inside the tent containing a spruce plank with a flint and steel on it, and a barrel with some loot](https://cdn.modrinth.com/data/cached_images/423fec9615d0fe1ac208ee96ea79b1277f185b44.png)
-
-Teaches the player how to use a campfire. It has a campsite with an unlit campfire containing meat at the middle.
-
-### Respawn Anchor Tutorial
-
-![A place in the nether featuring a respawn anchor filled 1/4th with glowstone around it and then nether bricks around those glowstone](https://cdn.modrinth.com/data/cached_images/fc9e93a7c5e3bc8021539522da019411b457fb28.png)
-
-Teaches the player how to use a Respawn Anchor, has a respawn anchor activated to 1/4 and has glowstone around it (to
-give the player the hint that they should put glowstone into it).
-
-### Brewing Tutorial
-
-![A house made of dark cyan-like wood (Warped wood), called the Brewing Tutorial](https://cdn.modrinth.com/data/cached_images/def667f77b2bd66ef2cba5e6c1184b3647acff4e.png)
-
-Teaches the player the basics of the brewing stand, and teaches them how to make an awkward potion and a fire resistance
-potion.
-
-The ground level contains a barrel with materials for awkward potions, while the attic contains a barrel with more
-materials for making a fire resistance potion
-
-</details>
-
-## Questions/Suggestions/Problems
-
-Make an [issue](https://github.com/friedegg796/TutorialStructures/issues), I'll check it inshaAllah.
-
-### Could I put your Mod into MY modpack/Use it in my video?
-
-Read the [License](https://github.com/friedegg796/TutorialStructures?tab=License-1-ov-file), but yes, go for it, as long
-as you give credit.
-
-#### Disclaimer
-
-NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+Loader specific projects such as the Forge and Fabric project are used to load the Common project into the game. These projects also define code that is specific to that loader. Loader specific projects can access all of the code in the Common project. It is important to remember that the Common project can not access code from loader specific projects.
