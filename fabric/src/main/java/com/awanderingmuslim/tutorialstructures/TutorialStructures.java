@@ -2,7 +2,7 @@ package com.awanderingmuslim.tutorialstructures;
 
 import net.fabricmc.api.ModInitializer;
 
-public class ExampleMod implements ModInitializer {
+public class TutorialStructures implements ModInitializer {
 
     @Override
     public void onInitialize() {

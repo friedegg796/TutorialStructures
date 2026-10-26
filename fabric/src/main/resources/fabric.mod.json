@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.awanderingmuslim.tutorialstructures.ExampleMod"
+      "com.awanderingmuslim.tutorialstructures.TutorialStructures"
     ]
   },
   "mixins": [
