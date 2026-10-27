@@ -7,7 +7,7 @@ through this link. So if you wanna support me, and get a neat little server for 
 
 # Tutorial Structures
 
-Structures made to teach the player of game mechanics without the need of documentation or wikia.
+Structures designed to teach the player about Minecraft.
 
 For now, it only adds 3 structures, but more will be added inshaAllah.
 
