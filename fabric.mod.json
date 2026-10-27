@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "mod_id",
+  "id": "tutorialstructures",
   "version": "${version}",
   "name": "${mod_name}",
   "description": "${description}",
@@ -9,10 +9,10 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/friedegg796/TutorialStructures"
   },
   "license": "${license}",
-  "icon": "assets/modid/icon.png",
+  "icon": "pack.png",
   "environment": "*",
   "entrypoints": {
     "main": [

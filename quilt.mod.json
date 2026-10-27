@@ -1,0 +1,17 @@
+{"schema_version":1,
+"quilt_loader":{
+"group":"com.modrinth",
+"id":"tutorialstructures",
+"version":"1.0.2",
+"metadata":{
+    "name":"TutorialStructures",
+    "description":"Learn about Minecraft using Structures!",
+    "contributors":{"awanderingmuslim":"Owner"},
+    "contact":
+    {"homepage":"https://github.com/friedegg796/TutorialStructures"},
+    "icon":"pack.png"},
+    "intermediate_mappings":"net.fabricmc:intermediary",
+    "depends":[{
+        "id":"quilt_resource_loader",
+        "versions":"*",
+        "unless":"fabric-resource-loader-v0"}]}}
