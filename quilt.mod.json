@@ -9,7 +9,7 @@
     "contributors":{"awanderingmuslim":"Owner"},
     "contact":
     {"homepage":"https://github.com/friedegg796/TutorialStructures"},
-    "icon":"pack.png"},
+    "icon":"tutorialstructures.png"},
     "intermediate_mappings":"net.fabricmc:intermediary",
     "depends":[{
         "id":"quilt_resource_loader",
