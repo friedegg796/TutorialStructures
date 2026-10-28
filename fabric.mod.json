@@ -11,7 +11,7 @@
     "homepage": "https://modrinth.com/mod/tutorial-structures",
     "sources": "https://github.com/friedegg796/TutorialStructures"
   },
-  "license": "${license}",
+  "license": "ARR",
   "icon": "pack.png",
   "environment": "*",
   "entrypoints": {
@@ -19,10 +19,6 @@
       "com.awanderingmuslim.tutorialstructures.TutorialStructures"
     ]
   },
-  "mixins": [
-    "${mod_id}.mixins.json",
-    "${mod_id}.fabric.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=0.14",
     "fabric": "*",
