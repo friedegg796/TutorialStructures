@@ -2,15 +2,7 @@ modLoader = 'lowcodefml'
 loaderVersion = '[40,)'
 license = 'LicenseRef-All-Rights-Reserved'
 showAsResourcePack = false
-mods = [
-	{ modId = 'tutorialstructures',
-	version = '1.0.2',
-	displayName = 'Tutorial Structures',
-	description = 'Teach the player Minecraft using structures!,
-	logoFile = 'tutorialstructures.png',
-	authors = 'AwanderingMuslim',
-	credits = '',
-	displayURL = 'https://modrinth.com/mod/tutorial-structures' },
+mods = [{ modId = 'tutorialstructures', version = '1.0.2', displayName = 'Tutorial Structures', description = 'Teach the player Minecraft using structures!', logoFile = 'tutorialstructures.png', authors = 'AwanderingMuslim', credits = '', displayURL = 'https://modrinth.com/mod/tutorial-structures' },
 ]
 
 
