@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "tutorialstructures",
-  "version": "${version}",
+  "version": "1.0.2",
   "name": "Tutorial Structures",
-  "description": "1.0.2",
+  "description": "Teach the player Minecraft using structures!",
   "authors": [
-    "${mod_author}"
+    "AwanderingMuslim"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/tutorial-structures",
