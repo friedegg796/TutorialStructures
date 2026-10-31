@@ -29,5 +29,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "tutorialstructures:chests/bee_tutorial_loot"
 }
