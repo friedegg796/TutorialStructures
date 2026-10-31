@@ -1,15 +1,15 @@
 <a href="https://billing.sparkedhost.com/aff.php?aff=3242">
-<img src="https://cdn.modrinth.com/data/cached_images/277f1b5c0c151bb93fec06c6b820aa67f2ad83f6.png" alt="Sparked Hosting Logo" width=30%/>
+<img src="https://cdn.modrinth.com/data/cached_images/277f1b5c0c151bb93fec06c6b820aa67f2ad83f6.png" alt="Sparked Hosting Logo affiliate link" width=30%/>
 </a>
 
-_This image has an affiliate link, aka I can get a commission (MONEY for me at no expense to you) if you purchase
+_This image has an affiliate link, aka I can get a commission. if you purchase
 through this link. So if you wanna support me, and get a neat little server for Minecraft, click the image!_
 
 # Tutorial Structures
 
 Structures designed to teach the player about Minecraft.
 
-For now, it only adds 3 structures, but more will be added inshaAllah.
+Some of the structures are shown below.
 
 <details>
 <summary>Structures</summary>
