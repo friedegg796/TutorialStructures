@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "tutorialstructures:bee_tutorial",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 15,
+    "salt": 1656208302
+  }
+}
