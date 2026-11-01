@@ -43,11 +43,14 @@ materials for making a fire resistance potion
 
 Make an [issue](https://github.com/friedegg796/TutorialStructures/issues), I'll check it inshaAllah.
 
-### Could I put your Mod into MY modpack/Use it in my video?
+### Could I put it into a modpack/In my video?
 
 Read the [License](https://github.com/friedegg796/TutorialStructures?tab=License-1-ov-file), but yes, go for it, as long
 as you give credit.
 
+### Credits
+
+Thanks to SV Gravity for the general build of the bee tutorial!
 #### Disclaimer
 
 NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
